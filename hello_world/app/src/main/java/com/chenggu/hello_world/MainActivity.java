@@ -9,6 +9,15 @@ import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
 
+/*
+
+第三方库：
+Volley：用于HTTP的链接和JSON的parse
+Glide：用于异步图片的抓取、解码和显示
+SwipetoRefresh：用于改善GridView的UI和UX
+
+*/
+
 public class MainActivity extends AppCompatActivity {
 
     @Override
