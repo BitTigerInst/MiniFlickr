@@ -2,9 +2,25 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     tools:context="com.chenggu.hello_world.MainActivity">
+
     <item
-        android:id="@+id/action_settings"
-        android:orderInCategory="100"
-        android:title="@string/action_settings"
-        app:showAsAction="never" />
+        android:id="@+id/menu_item_search"
+        android:title="Search"
+        android:icon="@android:drawable/ic_menu_search"
+        app:showAsAction="ifRoom"
+        app:actionViewClass="android.widget.SearchView"
+        />
+
+    <item
+        android:id="@+id/menu_item_move"
+        android:title="Move To Top"
+        android:icon="@android:drawable/ic_menu_revert"
+        app:showAsAction="ifRoom"
+        />
+
+    <item
+        android:id="@+id/menu_item_clear"
+        android:title="Clear Search History"
+        android:icon="@android:drawable/ic_menu_close_clear_cancel"
+        app:showAsAction="ifRoom" />
 </menu>
