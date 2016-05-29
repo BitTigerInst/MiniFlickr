@@ -10,7 +10,8 @@ import android.os.Bundle;
 import android.preference.PreferenceManager;
 import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.RecyclerView;
-import android.support.v7.widget.SearchView;
+//import android.support.v7.widget.SearchView;
+import android.widget.SearchView;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.Menu;
@@ -178,6 +179,8 @@ public class GalleryFragment extends Fragment {
 
         MenuItem searchItem = menu.findItem(R.id.menu_item_search);
         // TODO: java.lang.ClassCastException: android.widget.SearchView cannot be cast to android.support.v7.widget.SearchView
+        //MenuItem.getActionView() 返回的是android.widget.SearchView 不能 cast android.support.v7.widget.SearchView
+        //所以import了android.widget.SearchView 但是会违背尽量使用 support library的widget的原则?
         mSearchView = (SearchView) searchItem.getActionView();
         if (mSearchView != null) {
 
